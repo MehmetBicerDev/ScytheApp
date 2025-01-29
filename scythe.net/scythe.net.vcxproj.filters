@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{b212cdc9-195e-4464-b820-f4692c9ec93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{2770965a-93d1-4d54-88a6-35ce920d26e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\packets">
+      <UniqueIdentifier>{52e2dd98-55cb-439a-8400-c574802c5103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\packets\c2s">
+      <UniqueIdentifier>{91d52e93-5e40-4846-ab80-cc1aaa18015e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\packets\s2c">
+      <UniqueIdentifier>{9e6d9430-84fe-4257-ba1c-4a57b8921a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\packets\common">
+      <UniqueIdentifier>{b2902ee2-2d9c-468a-b31a-568c8b3cc7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets">
+      <UniqueIdentifier>{74ad6e1f-5cdf-4bbf-8045-9eb39079bf3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s">
+      <UniqueIdentifier>{b63c590a-78f4-4d33-b7c6-d3945a5d5bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c">
+      <UniqueIdentifier>{ee4defeb-f339-47c6-97bf-068be6bb0470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{fb58cbc8-4df3-4c24-98f1-ec16bef45ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database\account">
+      <UniqueIdentifier>{da9f2e88-6f98-4d8e-bbe3-4c1b45da51cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database\server">
+      <UniqueIdentifier>{91d77eea-ec16-41ac-826d-7da1c20edb81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s\auth">
+      <UniqueIdentifier>{606edd3c-7443-43f4-9b68-25d153bee487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\auth">
+      <UniqueIdentifier>{8b0a7631-e04d-4468-a17e-aed6ffa6c909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s\server">
+      <UniqueIdentifier>{a0d40629-2399-43b4-9d88-19d5dc328d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\server">
+      <UniqueIdentifier>{76c28b3a-3fbc-463d-b5c9-520c29977643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s\server\voice">
+      <UniqueIdentifier>{016069c0-a948-4c48-85ec-b3bcff193766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\server\voice">
+      <UniqueIdentifier>{988cb6f4-9226-4c38-8c2b-36b737f59c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s\server\channel">
+      <UniqueIdentifier>{3549855b-fd17-4d20-9492-22c20d4e4b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\server\channel">
+      <UniqueIdentifier>{8360d5af-94ae-4c01-8c1e-e3c8cc9682ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\client">
+      <UniqueIdentifier>{b205f2a9-2b36-41ef-97d4-2dd398fd7a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\s2c\friend">
+      <UniqueIdentifier>{9d594a81-ae8d-41a5-936e-0fc779f92b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scythepackets\c2s\friend">
+      <UniqueIdentifier>{f7e4189f-7c4c-40de-a5cb-a364da8f0c89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c_tcpserver.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="c_tcpclient.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="c_session.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="netincludes.h" />
+    <ClInclude Include="c_packet.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="c_buffer.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="net_constants.h" />
+    <ClInclude Include="c_message.h">
+      <Filter>core\packets\common</Filter>
+    </ClInclude>
+    <ClInclude Include="c_account.h">
+      <Filter>database\account</Filter>
+    </ClInclude>
+    <ClInclude Include="c_server.h">
+      <Filter>database\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voicechannel.h">
+      <Filter>database\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_accountstate.h">
+      <Filter>database\account</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voice_data_req.h">
+      <Filter>scythepackets\c2s\server\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voicechannel_join_req.h">
+      <Filter>scythepackets\c2s\server\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="c_register_req.h">
+      <Filter>scythepackets\c2s\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="c_login_req.h">
+      <Filter>scythepackets\c2s\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voicechannel_join_ack.h">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voice_data_ack.h">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="c_auth_ack.h">
+      <Filter>scythepackets\s2c\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="c_member.h">
+      <Filter>database\account</Filter>
+    </ClInclude>
+    <ClInclude Include="c_serverjoin_req.h">
+      <Filter>scythepackets\c2s\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_serverjoin_ack.h">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_voicechannel_leave_ack.h">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="c_server_ack.h">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_createserver_req.h">
+      <Filter>scythepackets\c2s\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channelcreate_req.h">
+      <Filter>scythepackets\c2s\server\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="c_server_userjoin_info_ack.h">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channelmessage.h">
+      <Filter>database\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channel.h">
+      <Filter>database\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channel_ack.h">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channelmessage_req.h">
+      <Filter>scythepackets\c2s\server\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channelmessage_ack.h">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="c_channelbulkmessage_ack.h">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="c_updatestate_ack.h">
+      <Filter>scythepackets\s2c\client</Filter>
+    </ClInclude>
+    <ClInclude Include="c_role.h">
+      <Filter>database\server</Filter>
+    </ClInclude>
+    <ClInclude Include="c_friendrequest_req.h">
+      <Filter>scythepackets\c2s\friend</Filter>
+    </ClInclude>
+    <ClInclude Include="c_removefriend_req.h">
+      <Filter>scythepackets\c2s\friend</Filter>
+    </ClInclude>
+    <ClInclude Include="c_friendchannel.h">
+      <Filter>database\account</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_session.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="c_tcpserver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="c_packet.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="c_tcpclient.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="c_message.cpp">
+      <Filter>core\packets\common</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voicechannel.cpp">
+      <Filter>database\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voice_data_req.cpp">
+      <Filter>scythepackets\c2s\server\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="c_login_req.cpp">
+      <Filter>scythepackets\c2s\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="c_register_req.cpp">
+      <Filter>scythepackets\c2s\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voicechannel_join_req.cpp">
+      <Filter>scythepackets\c2s\server\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voice_data_ack.cpp">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="c_auth_ack.cpp">
+      <Filter>scythepackets\s2c\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voicechannel_join_ack.cpp">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="c_server.cpp">
+      <Filter>database\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_serverjoin_req.cpp">
+      <Filter>scythepackets\c2s\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_serverjoin_ack.cpp">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_voicechannel_leave_ack.cpp">
+      <Filter>scythepackets\s2c\server\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="c_server_ack.cpp">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_createserver_req.cpp">
+      <Filter>scythepackets\c2s\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channelcreate_req.cpp">
+      <Filter>scythepackets\c2s\server\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="c_server_userjoin_info_ack.cpp">
+      <Filter>scythepackets\s2c\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channel.cpp">
+      <Filter>database\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channel_ack.cpp">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channelmessage_req.cpp">
+      <Filter>scythepackets\c2s\server\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channelmessage_ack.cpp">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="c_channelbulkmessage_ack.cpp">
+      <Filter>scythepackets\s2c\server\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="c_updatestate_ack.cpp">
+      <Filter>scythepackets\s2c\client</Filter>
+    </ClCompile>
+    <ClCompile Include="c_role.cpp">
+      <Filter>database\server</Filter>
+    </ClCompile>
+    <ClCompile Include="c_friendrequest_req.cpp">
+      <Filter>scythepackets\c2s\friend</Filter>
+    </ClCompile>
+    <ClCompile Include="c_removefriend_req.cpp">
+      <Filter>scythepackets\c2s\friend</Filter>
+    </ClCompile>
+    <ClCompile Include="c_account.cpp">
+      <Filter>database\account</Filter>
+    </ClCompile>
+    <ClCompile Include="c_friendchannel.cpp">
+      <Filter>database\account</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

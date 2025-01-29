@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c_account.h" />
+    <ClInclude Include="c_accountstate.h" />
+    <ClInclude Include="c_auth_ack.h" />
+    <ClInclude Include="c_channel.h" />
+    <ClInclude Include="c_channelbulkmessage_ack.h" />
+    <ClInclude Include="c_channelcreate_req.h" />
+    <ClInclude Include="c_channelmessage.h" />
+    <ClInclude Include="c_channelmessage_ack.h" />
+    <ClInclude Include="c_channelmessage_req.h" />
+    <ClInclude Include="c_channel_ack.h" />
+    <ClInclude Include="c_createserver_req.h" />
+    <ClInclude Include="c_friendchannel.h" />
+    <ClInclude Include="c_friendrequest_req.h" />
+    <ClInclude Include="c_member.h" />
+    <ClInclude Include="c_register_req.h" />
+    <ClInclude Include="c_buffer.h" />
+    <ClInclude Include="c_login_req.h" />
+    <ClInclude Include="c_message.h" />
+    <ClInclude Include="c_packet.h" />
+    <ClInclude Include="c_removefriend_req.h" />
+    <ClInclude Include="c_role.h" />
+    <ClInclude Include="c_server.h" />
+    <ClInclude Include="c_serverjoin_ack.h" />
+    <ClInclude Include="c_serverjoin_req.h" />
+    <ClInclude Include="c_server_ack.h" />
+    <ClInclude Include="c_server_userjoin_info_ack.h" />
+    <ClInclude Include="c_session.h" />
+    <ClInclude Include="c_tcpclient.h" />
+    <ClInclude Include="c_tcpserver.h" />
+    <ClInclude Include="c_updatestate_ack.h" />
+    <ClInclude Include="c_voicechannel.h" />
+    <ClInclude Include="c_voicechannel_join_ack.h" />
+    <ClInclude Include="c_voicechannel_join_req.h" />
+    <ClInclude Include="c_voicechannel_leave_ack.h" />
+    <ClInclude Include="c_voice_data_ack.h" />
+    <ClInclude Include="c_voice_data_req.h" />
+    <ClInclude Include="netincludes.h" />
+    <ClInclude Include="net_constants.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_account.cpp" />
+    <ClCompile Include="c_auth_ack.cpp" />
+    <ClCompile Include="c_channel.cpp" />
+    <ClCompile Include="c_channelbulkmessage_ack.cpp" />
+    <ClCompile Include="c_channelcreate_req.cpp" />
+    <ClCompile Include="c_channelmessage_ack.cpp" />
+    <ClCompile Include="c_channelmessage_req.cpp" />
+    <ClCompile Include="c_channel_ack.cpp" />
+    <ClCompile Include="c_createserver_req.cpp" />
+    <ClCompile Include="c_friendchannel.cpp" />
+    <ClCompile Include="c_friendrequest_req.cpp" />
+    <ClCompile Include="c_register_req.cpp" />
+    <ClCompile Include="c_login_req.cpp" />
+    <ClCompile Include="c_message.cpp" />
+    <ClCompile Include="c_packet.cpp" />
+    <ClCompile Include="c_removefriend_req.cpp" />
+    <ClCompile Include="c_role.cpp" />
+    <ClCompile Include="c_server.cpp" />
+    <ClCompile Include="c_serverjoin_ack.cpp" />
+    <ClCompile Include="c_serverjoin_req.cpp" />
+    <ClCompile Include="c_server_ack.cpp" />
+    <ClCompile Include="c_server_userjoin_info_ack.cpp" />
+    <ClCompile Include="c_session.cpp" />
+    <ClCompile Include="c_tcpclient.cpp" />
+    <ClCompile Include="c_tcpserver.cpp" />
+    <ClCompile Include="c_updatestate_ack.cpp" />
+    <ClCompile Include="c_voicechannel.cpp" />
+    <ClCompile Include="c_voicechannel_join_ack.cpp" />
+    <ClCompile Include="c_voicechannel_join_req.cpp" />
+    <ClCompile Include="c_voicechannel_leave_ack.cpp" />
+    <ClCompile Include="c_voice_data_ack.cpp" />
+    <ClCompile Include="c_voice_data_req.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{19d5548b-34a2-4e62-8446-c4a7f318601c}</ProjectGuid>
+    <RootNamespace>scythenet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Administrator\source\repos\ScytheApp\scythe.util;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

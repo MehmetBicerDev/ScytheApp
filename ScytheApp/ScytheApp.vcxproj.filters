@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="scythe_client.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="app.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="voice_chat.cpp">
+      <Filter>app\features</Filter>
+    </ClCompile>
+    <ClCompile Include="c_windowframework.cpp">
+      <Filter>app\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="c_d3d9framework.cpp">
+      <Filter>app\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="c_d3d9texturecache.cpp">
+      <Filter>app\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="app_functions.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_base.cpp">
+      <Filter>app\ui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_extension.cpp">
+      <Filter>app\ui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="scythe_ui.cpp">
+      <Filter>app\ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="server_ui.cpp">
+      <Filter>app\ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_variables.cpp">
+      <Filter>app\ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="main_ui.cpp">
+      <Filter>app\ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="friend_ui.cpp">
+      <Filter>app\ui\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="net">
+      <UniqueIdentifier>{d3150e90-7038-4d8c-88f7-90a13d4c4db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{1f0c1bc6-53bd-4a78-982b-97832432f726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\features">
+      <UniqueIdentifier>{58f6155f-4b1f-4b7c-90c0-e34c46ca8e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\framework">
+      <UniqueIdentifier>{c3cb0060-8a1c-41a7-9546-28513b425608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\ui">
+      <UniqueIdentifier>{fbf2e464-635c-4ec6-8d7c-f0b99fdbd76e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\ui\skeleton">
+      <UniqueIdentifier>{3c1b5b1f-2a5b-4240-849b-2f0660fc469d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\ui\imgui">
+      <UniqueIdentifier>{cb22e151-f42d-4ca5-ab2f-3ecabcc61fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\ui\base">
+      <UniqueIdentifier>{f0b4fb15-e0c7-43e3-81c0-accbf8dc1b69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scythe_client.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="voice_chat.h">
+      <Filter>app\features</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="c_windowframework.h">
+      <Filter>app\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="c_d3d9framework.h">
+      <Filter>app\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="c_d3d9texturecache.h">
+      <Filter>app\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_items.h">
+      <Filter>app\ui\skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="app_functions.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_base.h">
+      <Filter>app\ui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_extension.h">
+      <Filter>app\ui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="scythe_ui.h">
+      <Filter>app\ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="server_ui.h">
+      <Filter>app\ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_variables.h">
+      <Filter>app\ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="main_ui.h">
+      <Filter>app\ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="friend_ui.h">
+      <Filter>app\ui\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
